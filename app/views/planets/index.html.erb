@@ -7,10 +7,10 @@
   
   <h1>Hello World!</h1>
   <p>
-    <h2>Spectacular Lunar Eclipse..</h2>
+    <h2>Look at this spectacular Lunar Eclipse..</h2>
     
     
-    <a href="http://cdn.viewmixed.com/wp-content/uploads/2014/12/Moon-eclipse-Earth-Moon.jpg">..and take a peek at this solar eclipse!</a>
+    <a href="http://cdn.viewmixed.com/wp-content/uploads/2014/12/Moon-eclipse-Earth-Moon.jpg">...and take a peek at this solar eclipse!</a>
     <br />
     <br />
     <br />
@@ -24,10 +24,10 @@
     
     
     <% @planets.each do |planet| %>
-    <h1><%= planet.name %></h1>
-    <h1><%= planet.distance %></h1>
+    <h2><%= planet.name %></h2>
+    <h3>Distance from Earth: <%= planet.distance %></h3>
+    <br />
     <% end %>
-    
     
   </body>
   </html>
