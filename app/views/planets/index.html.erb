@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  
+  <h1>Hello World!</h1>
+  <p>
+    <h2>Spectacular Lunar Eclipse..</h2>
+    
+    
+    <a href="http://cdn.viewmixed.com/wp-content/uploads/2014/12/Moon-eclipse-Earth-Moon.jpg">..and take a peek at this solar eclipse!</a>
+    <br />
+    <br />
+    <br />
+    
+    <button type="button" class="btn btn-default"><%= link_to 'Add a new planet', new_planet_path %></button>
+    
+    
+    <br />
+    <br />
+    <br />
+    
+    
+    <% @planets.each do |planet| %>
+    <h1><%= planet.name %></h1>
+    <h1><%= planet.distance %></h1>
+    <% end %>
+    
+    
+  </body>
+  </html>
+  

@@ -1,0 +1,12 @@
+<h1>Enter Your Planet</h1>
+<br />
+
+<class="label"><%= simple_form_for @planet do |f| %>
+
+<%= f.input :name, label: 'Planet' %>
+<br />
+<%= f.input :distance, label: 'Distance from Earth' %>
+<br />
+
+<%= f.submit 'Create', class: 'btn btn-success btn-sm' %>
+<% end %>
